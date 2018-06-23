@@ -43,3 +43,112 @@ Use these steps to clone from SourceTree, our client for using the repository co
 4. Open the directory you just created to see your repository’s files.
 
 Now that you're more familiar with your Bitbucket repository, go ahead and add a new file locally. You can [push your change back to Bitbucket with SourceTree](https://confluence.atlassian.com/x/iqyBMg), or you can [add, commit,](https://confluence.atlassian.com/x/8QhODQ) and [push from the command line](https://confluence.atlassian.com/x/NQ0zDQ).
+
+
+# Mark's website project!
+
+This project is written in pure JS and SCSS with HTML5.   **Bootstrap** is chosen to be the library for ``JS`` and ``CSS``. If you want to learn more about Bootstrap, you can watch this youtube video.
+
+[![Bootstrap](http://img.youtube.com/vi/hnCmSXCZEpU/0.jpg)](http://www.youtube.com/watch?v=hnCmSXCZEpU "Bootstrap")
+
+
+# Installation
+Install [NodeJS](https://nodejs.org/en/) if you have not already. You can if installed, the current version by typing command
+```
+node -v
+```
+If there is any issue with the installation, try to resolve it by searching online. May be it needs Ruby gem to be installed on your *laptop*.
+
+# Folder structure
+Names are self explanatory for putting the right resource file in there. This makes easier to manage and separate files.
+```markup
+/src
+    /assets
+    /css
+    /js
+    /scss
+```
+
+At this point you must have some idea of writing HTML tags with **Bootstrap** classes . We will uses **JQuery** as well but for now Bootstrap+markup is fine.
+
+We will write all our markup in `src/index.html` file to begin with. In later stages all pages will have separate directory of their own. 
+
+We are not going to write styles by hand. **SCSS** is very simple and similar to `CSS` and it is time to upgrade if required. For vector icons we are using **FontAwesome**. It is awesome and work well with Bootstrap.  SCSS also makes it easy to apply themes in Bootstrap. This is a simple example of changing main theme colours. It will apply to navigation bar, buttons, etc; 
+```css
+// Variable Overrides 
+$theme-colors: (
+  "primary": #d95700
+);
+
+$body-bg: #ededed;
+// Bootstrap Sass Imports
+@import "node_modules/bootstrap/scss/bootstrap";
+```
+## Build 
+### Setup
+1. Install gulp and other global tools `npm install -g gulp-cli`
+2. Go to your project folder `cd to-project-folder/Website` 
+3. Install build dependencies `npm install`
+
+### Development
+Run the `gulp` command. If it ran successfully then your default browser will open with address `http://localhost:3000` The page will load itself as you `edit+save` any file or add anything to the `./src` folder. You can add your JavaScript code to `./src/js/main.js` file. and SCSS to `styles.scss` file. There is a file for CSS libraries in `./src/css` folder.
+
+If there are any issues then google the error description or ask for help!
+
+### Deployment
+```
+Let's worry about tht letter
+```# Welcome to Mark's website project!
+
+This project is written in pure JS and SCSS with HTML5.   **Bootstrap** is chosen to be the library for ``JS`` and ``CSS``. If you want to learn more about Bootstrap, you can watch this youtube video.
+
+[![Bootstrap](http://img.youtube.com/vi/hnCmSXCZEpU/0.jpg)](http://www.youtube.com/watch?v=hnCmSXCZEpU "Bootstrap")
+
+
+# Installation
+Install [NodeJS](https://nodejs.org/en/) if you have not already. You can if installed, the current version by typing command
+```
+node -v
+```
+If there is any issue with the installation, try to resolve it by searching online. May be it needs Ruby gem to be installed on your *laptop*.
+
+# Folder structure
+Names are self explanatory for putting the right resource file in there. This makes easier to manage and separate files.
+```markup
+/src
+    /assets
+    /css
+    /js
+    /scss
+```
+
+At this point you must have some idea of writing HTML tags with **Bootstrap** classes . We will uses **JQuery** as well but for now Bootstrap+markup is fine.
+
+We will write all our markup in `src/index.html` file to begin with. In later stages all pages will have separate directory of their own. 
+
+We are not going to write styles by hand. **SCSS** is very simple and similar to `CSS` and it is time to upgrade if required. For vector icons we are using **FontAwesome**. It is awesome and work well with Bootstrap.  SCSS also makes it easy to apply themes in Bootstrap. This is a simple example of changing main theme colours. It will apply to navigation bar, buttons, etc; 
+```css
+// Variable Overrides 
+$theme-colors: (
+  "primary": #d95700
+);
+
+$body-bg: #ededed;
+// Bootstrap Sass Imports
+@import "node_modules/bootstrap/scss/bootstrap";
+```
+## Build 
+### Setup
+1. Install gulp and other global tools `npm install -g gulp-cli`
+2. Go to your project folder `cd to-project-folder/Website` 
+3. Install build dependencies `npm install`
+
+### Development
+Run the `gulp` command. If it ran successfully then your default browser will open with address `http://localhost:3000` The page will load itself as you `edit+save` any file or add anything to the `./src` folder. You can add your JavaScript code to `./src/js/main.js` file. and SCSS to `styles.scss` file. There is a file for CSS libraries in `./src/css` folder.
+
+If there are any issues then google the error description or ask for help!
+
+### Deployment
+```
+Let's worry about tht letter
+```
